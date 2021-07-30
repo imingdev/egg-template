@@ -1,0 +1,32 @@
+{
+  "name": "egg-template",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "egg-bin dev",
+    "start": "egg-scripts start --daemon",
+    "stop": "egg-scripts stop",
+    "generate-models": "egg-sequelize-auto -o app/model -d article_db -h localhost -u root -p 3306 -x helloworld123 -e mysql"
+  },
+  "dependencies": {
+    "egg": "^2.29.4",
+    "egg-scripts": "^2.14.0",
+    "egg-sequelize": "^6.0.0",
+    "egg-validate": "^2.0.2",
+    "hash-sum": "^2.0.0",
+    "mysql2": "^2.2.5"
+  },
+  "devDependencies": {
+    "egg-bin": "^4.16.4",
+    "egg-sequelize-auto": "^0.1.1",
+    "eslint": "^7.31.0",
+    "eslint-config-egg": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
